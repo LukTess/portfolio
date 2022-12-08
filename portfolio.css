@@ -1,0 +1,417 @@
+
+
+body{
+    display: flex;
+    background-color: #252628;
+
+}
+#navMediaQueries{
+    display: none;
+}
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    font-size: 6vw;
+    color: #09fcd7;;
+}
+h3{
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 100;
+    font-size: 1vw;
+}
+#nomLangage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+    font-size: 1.2vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header{
+    background-color: aquamarine;
+    width: 10vw;
+
+    display: flex;
+    flex-direction: column;
+    
+}
+#logo{
+    background-color: rgb(165, 163, 42);
+    aspect-ratio: 1/1;
+
+
+}
+#blocLangue{
+    background-color: rgb(255, 251, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20%;
+    margin-top: 6%;
+
+}
+#langages{
+    width: 75%;
+    background-color: rgb(255, 1, 1);
+    margin: 5%;
+    /* margin-top: 6%; */
+    aspect-ratio: 1/1;
+
+}
+#blocIconeMenu{
+    margin-top: 50%;
+    height: 40%;
+    /* margin-top:10%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 0, 170);
+}
+#iconeMenu{
+    width: 75%;
+    background-color: rgb(153, 1, 255);
+    display: flex;
+    /* margin: 11%; */
+    margin-top: 10%;
+
+    aspect-ratio: 1/1;
+    
+}
+
+#profil, #work, #setting, #contact, #acceuil{
+    width: 100%;
+    aspect-ratio: 1/1; 
+}
+
+
+#blocReseauxSociaux{
+
+    background-color: rgb(43, 255, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    /* margin-top: 10%; */
+    margin-bottom: 10%;
+    height: 30%;
+
+}
+#iconeReseau{
+    width: 75%;
+    margin: 11%;
+    aspect-ratio: 1/1;
+    background-color: rgb(255, 1, 98);
+
+}
+#facebook, #linkedin, #insta, #twitter, #translate{
+    width: 100%;
+    aspect-ratio: 1/1; 
+}
+#content{
+    
+    margin-top: 10%;
+}
+#main{
+    display: flex;
+}
+#titre{
+    background-color: blue;
+
+    width: 40vw;
+    margin-left: 2vw;
+    padding: 2%;
+
+}
+#skill{
+    background-color: blueviolet;
+    width: 50vw;
+}
+#main{
+    background-color: brown;
+    display: flex;
+
+}
+#mainSkill{
+    width: 25%;
+    height: 100%;
+    background-color: chartreuse;
+    aspect-ratio: 1/1;
+    margin: 3%;
+
+}
+
+@keyframes growProgressBar {
+    0%, 33% { --pgPercentage: 0; }
+    100% { --pgPercentage: var(--value); }
+  }
+  
+  @property --pgPercentage {
+    syntax: '<number>';
+    inherits: false;
+    initial-value: 0;
+  }
+  
+  div[role="progressbar"] {
+    --size: 100%;
+    --fg: #09fcd7;
+    --bg: #015749;
+    --pgPercentage: var(--value);
+    animation: growProgressBar 3s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: 
+      radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
+      conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0)
+      ;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.5vw;
+    color: black;
+  }
+  
+  div[role="progressbar"]::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+  }
+
+  div[role="subprogressbar"] {
+    --size: 100%;
+    --fg: #09fcd7;
+    --bg: #015749;
+    --pgPercentage: var(--value);
+    animation: growProgressBar 3s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: 
+      radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
+      conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0)
+      ;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.8vw;
+    color: black;
+  }
+  
+  div[role="subprogressbar"]::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+  }
+  
+#detail{
+    background-color: rgb(165, 42, 155);
+    display: flex;
+    
+}
+#detailSkill{
+    width: 25%;
+    height: 100%;
+    background-color: rgb(25, 0, 255);
+    aspect-ratio: 1/1;
+
+    margin-right: 1%;
+
+}
+#l1, #l2{
+    display: flex;
+}
+#subDetailSkill{
+    width: 50%;
+    height: 50%;
+    background-color: rgb(255, 136, 0);
+    aspect-ratio: 1/1;
+}
+#work{
+    /* display: flex; */
+
+}
+#intro{
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 6vw;
+    color: #09fcd7;;
+    margin-left: 2vw;
+    padding: 2%;
+}
+#workVignette{
+    display: flex;
+    width: 25%;
+    aspect-ratio: 1/1;
+    flex-wrap: wrap;
+
+    margin: 1.5%;
+    background-color: crimson;
+
+}
+#workLigne{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 640px) {
+    body {
+      background-color: chocolate;
+      display: block;
+    }
+    header{
+        display: none;
+        
+    }
+    #navMediaQueries{
+        display: block;
+    }
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1050px;
+  width: 90%;
+  margin: auto;
+}
+
+.navbar {
+  width: 100%;
+  box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+}
+
+.navbar .menu-items {
+  display: flex;
+}
+
+.navbar .nav-container li {
+  list-style: none;
+}
+
+.navbar .nav-container a {
+  text-decoration: none;
+  color: #0e2431;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 0.7rem;
+}
+
+.navbar .nav-container a:hover{
+    font-weight: bolder;
+}
+
+.nav-container {
+  display: block;
+  position: relative;
+  height: 60px;
+}
+
+.nav-container .checkbox {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  top: 20px;
+  left: 20px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.nav-container .hamburger-lines {
+  display: block;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-container .hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #0e2431;
+}
+
+.nav-container .hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.navbar .menu-items {
+  padding-top: 120px;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+  height: 100vh;
+  width: 100%;
+  transform: translate(-150%);
+  display: flex;
+  flex-direction: column;
+  margin-left: -40px;
+  padding-left: 50px;
+  transition: transform 0.5s ease-in-out;
+  text-align: center;
+}
+
+.navbar .menu-items li {
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.logo {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  font-size: 1.2rem;
+  color: #0e2431;
+}
+
+.nav-container input[type="checkbox"]:checked ~ .menu-items {
+  transform: translateX(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  transform: rotate(-45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .logo{
+  display: none;
+}
+  }
+
